@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Watermark Studio — Marca D'Água em Lote para Eventos</title>
   <meta name="description" content="Aplique marcas d'água e logos em lotes de centenas ou milhares de fotos de eventos com alta performance, 100% no seu navegador e sem envio para servidores externos.">
-  <link rel="icon" type="image/svg+xml" href="./assets/sample-logo.svg">
-  <link rel="stylesheet" href="./css/style.css?v=1.1.0">
+  <link rel="icon" type="image/png" href="./assets/logo-crisma-fatima.png">
+  <link rel="stylesheet" href="./css/style.css?v=1.2.0">
 </head>
 <body>
 
@@ -76,21 +76,28 @@
         <input type="file" id="input-folder-fallback" webkitdirectory directory multiple style="display: none;">
       </section>
 
-      <!-- Passo 2: Marca D'Água (Logo) -->
+            <!-- Passo 2: Marca D'Água (Logo) -->
       <section class="card" id="card-watermark">
         <h2 class="card-title">
           <span class="step-num">2</span>
           Marca D'Água / Logo
         </h2>
 
+        <p class="section-instruction">Adicione a logo que você deseja implementar nas imagens:</p>
+
         <label for="input-watermark-file" id="watermark-drop-zone" class="drop-zone">
-          <img id="watermark-preview-thumb" class="drop-zone-thumb" alt="Miniatura da Marca d'Água" src="./assets/sample-logo.svg">
+          <img id="watermark-preview-thumb" class="drop-zone-thumb" alt="Miniatura da Marca d'Água" src="./assets/logo-crisma-fatima.png">
           <div class="drop-zone-text">
             Arraste ou <strong>clique aqui</strong> para trocar a logo
           </div>
-          <div id="watermark-name-display" class="file-name-tag">sample-logo.svg</div>
+          <div id="watermark-name-display" class="file-name-tag">Crisma de Fátima (Sugerida)</div>
           <input type="file" id="input-watermark-file" accept="image/png,image/svg+xml,image/webp,image/jpeg" style="display: none;">
         </label>
+
+        <button type="button" id="btn-use-suggested-logo" class="btn-suggestion" title="Usar a logo oficial da Crisma de Fátima">
+          <img src="./assets/logo-crisma-fatima.png" alt="Logo Crisma de Fátima" class="suggestion-mini-icon">
+          <span>Usar logo sugerida (Crisma de Fátima)</span>
+        </button>
       </section>
 
       <!-- Passo 3: Posição e Ajustes -->
@@ -283,7 +290,14 @@
       </div>
 
       <!-- Direita: Espaçador para equilíbrio simétrico do centro -->
-      <div class="footer-spacer"></div>
+            <!-- Direita: Homenagem e Logo da Crisma de Fátima -->
+      <div class="footer-dedication">
+        <div class="footer-dedication-text">
+          <span>Desenvolvido em prol da</span>
+          <strong>Crisma de Fátima</strong>
+        </div>
+        <img src="./assets/logo-crisma-fatima.png" alt="Crisma de Fátima - Desde 2000" class="footer-dedication-logo">
+      </div>
 
     </div>
   </footer>
@@ -321,6 +335,6 @@
     </div>
   </div>
 
-  <script src="./js/app.js?v=1.1.0"></script>
+  <script src="./js/app.js?v=1.2.0"></script>
 </body>
 </html>

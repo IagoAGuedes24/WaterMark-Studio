@@ -313,16 +313,17 @@
     setupEventListeners();
     checkProtocolNotice();
 
-    // Carregar logo padrão
-    state.engine.loadWatermark('./assets/sample-logo.svg')
+    // Carregar logo sugerida padrão (Crisma de Fátima)
+    const DEFAULT_SUGGESTED_LOGO = './assets/logo-crisma-fatima.png';
+    state.engine.loadWatermark(DEFAULT_SUGGESTED_LOGO)
       .then(() => {
-        if (elements.watermarkNameDisplay) elements.watermarkNameDisplay.textContent = 'sample-logo.svg (Padrão)';
+        if (elements.watermarkNameDisplay) elements.watermarkNameDisplay.textContent = 'Crisma de Fátima (Sugerida)';
         if (elements.watermarkPreviewThumb) {
-          elements.watermarkPreviewThumb.src = './assets/sample-logo.svg';
+          elements.watermarkPreviewThumb.src = DEFAULT_SUGGESTED_LOGO;
           elements.watermarkPreviewThumb.style.display = 'block';
         }
       })
-      .catch((err) => console.warn('Não foi possível carregar a logo padrão:', err));
+      .catch((err) => console.warn('Não foi possível carregar a logo sugerida:', err));
 
     createPlaceholderSample();
   }
@@ -408,7 +409,22 @@
       }
     });
 
-    // 2. Upload de Logo
+    // 2. Upload de Logo & Botão de Logo Sugerida
+    const btnUseSuggested = document.getElementById('btn-use-suggested-logo');
+    if (btnUseSuggested) {
+      btnUseSuggested.addEventListener('click', async () => {
+        try {
+          await state.engine.loadWatermark('./assets/logo-crisma-fatima.png');
+          elements.watermarkNameDisplay.textContent = 'Crisma de Fátima (Sugerida)';
+          elements.watermarkPreviewThumb.src = './assets/logo-crisma-fatima.png';
+          elements.watermarkPreviewThumb.style.display = 'block';
+          renderCurrentPreview();
+        } catch (err) {
+          alert('Erro ao carregar a logo sugerida: ' + err.message);
+        }
+      });
+    }
+
     elements.inputWatermarkFile.addEventListener('change', (e) => {
       if (e.target.files && e.target.files[0]) {
         loadCustomWatermark(e.target.files[0]);
