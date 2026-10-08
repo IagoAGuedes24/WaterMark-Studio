@@ -9,7 +9,7 @@ Todas as grandes alterações, correções e novas funcionalidades adicionadas a
 - **Rodapé Profissional com Créditos:** Seção inferior elegante com os créditos de idealização (*Iago Albuquerque*) e atalhos diretos para contato (WhatsApp e E-mail), com alinhamento responsivo.
 - **Cache Busting:** Inclusão de parâmetros de versão nos links do CSS e JS (`?v=1.1.0`), forçando os navegadores dos visitantes a baixarem a versão mais recente sem retenção de cache antigo.
 - **Launcher Nativo Linux/WSL (`iniciar_local.sh`):** Script em bash com permissões executáveis (`chmod +x`) para rodar o servidor local nativamente no terminal Ubuntu.
-- **CI/CD no GitHub Pages:** Homologação do pipeline automatizado de Continuous Deployment no repositório oficial `WaterMark-Studio`.
+- **CI/CD no GitHub Pages:** Homologação do pipeline automatizado de Continuous Deployment no repositório oficial `watermark-studio`.
 
 ---
 

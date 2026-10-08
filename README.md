@@ -3,7 +3,7 @@
 Uma ferramenta web moderna, elegante e de alta performance desenvolvida para aplicação automatizada de marcas d'água e logos em lotes volumosos de fotos de eventos (suportando tranquilamente centenas ou mais de 2.000 fotos de câmera fotográfica por lote).
 
 > 🌐 **Acesso Online (Sem Instalação):**  
-> 👉 **[https://iagoaguedes24.github.io/WaterMark-Studio/](https://iagoaguedes24.github.io/WaterMark-Studio/)**
+> 👉 **[https://iagoaguedes24.github.io/watermark-studio/](https://iagoaguedes24.github.io/watermark-studio/)**
 
 ---
 
@@ -24,7 +24,7 @@ Uma ferramenta web moderna, elegante e de alta performance desenvolvida para apl
 ## 🖥️ Como Executar o Aplicativo
 
 1. **Online via Navegador (Mais Prático):**
-   * Basta acessar o link público: **[Watermark Studio Online](https://iagoaguedes24.github.io/WaterMark-Studio/)** no Google Chrome ou Microsoft Edge.
+   * Basta acessar o link público: **[Watermark Studio Online](https://iagoaguedes24.github.io/watermark-studio/)** no Google Chrome ou Microsoft Edge.
 
 2. **Localmente no Computador (Offline):**
    * **No Windows:** Dê dois cliques no arquivo **`iniciar_local.bat`** para abrir em `http://localhost:8080`.
